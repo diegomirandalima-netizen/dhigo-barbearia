@@ -1,0 +1,383 @@
+body {
+    background-color: #000000; /* Define o fundo da página como preto */
+    color: #ffffff;            /* Define a cor padrão do texto como branco */
+    font-family: Arial, sans-serif; /* Define a fonte padrão utilizada */
+    margin: 0;                 /* Remove as margens padrão do navegador */
+    padding: 0;                /* Remove o preenchimento padrão do navegador */
+}
+
+
+/* CABEÇALHO (HEADER)*/
+
+.header {
+    display: flex;             /* Organiza os elementos do topo lado a lado */
+    justify-content: space-between; /* Espaça os elementos uniformemente */
+    align-items: center;       /* Alinha os itens verticalmente ao centro */
+    padding: 20px;             /* Adiciona espaço interno no cabeçalho */
+    background-color: #111111; /* Define um tom escuro de fundo para o header */
+    border-bottom: 2px solid #b22222; /* Cria uma linha divisoria vermelha embaixo */
+}
+
+.logo-container {
+    display: flex;             /* Alinha a logo e seus detalhes em linha */
+    align-items: center;       /* Centraliza verticalmente a logo */
+    gap: 15px;                 /* Cria um espaçamento entre a imagem e o texto */
+}
+
+.logo {
+    width: 80px;               /* Define a largura fixa da imagem do logotipo */
+    height: auto;              /* Mantém a proporção original da altura */
+}
+
+.logo-footer {
+    width: 60px;               /* Define a largura da logo exibida no rodapé */
+    height: auto;              /* Mantém a proporção original da altura */
+}
+
+.foto-pirata img {
+    width: 70px;               /* Define a largura da imagem temática do pirata */
+    height: auto;              /* Mantém a proporção original da imagem */
+}
+
+.logo-text {
+    display: flex;             /* Organiza o texto da logo em coluna */
+    flex-direction: column;    /* Empilha o subtítulo em cima da logo principal */
+}
+
+.sub-logo {
+    font-size: 14px;           /* Define o tamanho pequeno do texto superior */
+    color: #b22222;            /* Colore o texto auxiliar em destaque vermelho */
+    font-weight: bold;         /* Deixa o texto em negrito */
+}
+
+.main-logo {
+    font-size: 20px;           /* Define o tamanho grande do nome principal */
+    font-weight: bold;         /* Deixa o texto principal em forte destaque */
+    color: #ffffff;            /* Define a cor branca para o nome da marca */
+}
+
+.titulo-container h1 {
+    font-size: 24px;           /* Define o tamanho do título principal do cabeçalho */
+    margin: 0;                 /* Remove margens extras do título */
+    color: #ffffff;            /* Deixa o título principal na cor branca */
+}
+
+.titulo-container h2 {
+    font-size: 16px;           /* Define o tamanho do subtítulo descritivo */
+    margin: 5px 0 0 0;         /* Adiciona pequeno espaço superior no subtítulo */
+    color: #b22222;            /* Destaca o subtítulo com tom avermelhado */
+}
+
+.header-cabecalho {
+    text-align: center;        /* Centraliza o texto informativo do cabeçalho */
+}
+
+.header-right {
+    text-align: right;         /* Alinha os links e slogan da direita para a ponta */
+}
+
+.slogan-top {
+    font-size: 14px;           /* Define o tamanho da fonte do slogan do topo */
+    color: #b22222;            /* Colore o slogan utilizando o padrão vermelho */
+    font-style: italic;        /* Deixa o texto do slogan em formato itálico */
+    margin-bottom: 5px;        /* Insere espaçamento inferior antes dos links */
+}
+
+
+/* MENU DE NAVEGAÇÃO (NAV)*/
+
+.menu {
+    background-color: #1a1a1a; /* Define o fundo escuro para a barra de menu */
+    padding: 10px 20px;        /* Adiciona respiro interno na barra de navegação */
+}
+
+.menu ul, .nav-links {
+    list-style: none;          /* Remove as marcações de lista (bolinhas) */
+    display: flex;             /* Organiza os itens do menu lado a lado */
+    gap: 20px;                 /* Cria um espaçamento horizontal entre os links */
+    margin: 0;                 /* Remove as margens padrões da lista */
+    padding: 0;                /* Remove o preenchimento padrão da lista */
+    align-items: center;       /* Alinha os itens do menu ao centro */
+}
+
+.menu a, .nav-links a {
+    color: #ffffff;            /* Define a cor branca para os links do menu */
+    text-decoration: none;     /* Remove o sublinhado padrão dos links */
+    font-weight: bold;         /* Deixa o texto dos botões de navegação em negrito */
+    transition: color 0.3s;    /* Adiciona transição suave ao passar o mouse */
+}
+
+.menu a:hover, .nav-links a:hover {
+    color: #b22222;            /* Altera a cor do link para vermelho ao passar o mouse */
+}
+
+
+/* SEÇÃO DE DESTAQUE / HERO E HORÁRIO DE FUNCIONAMENTO*/
+.hr-funcionamento {
+    position: relative;        /* Permite o posicionamento absoluto dos elementos internos */
+    background-image: url('#vermelho_fundo_home.jpg'); /* Define a imagem de fundo principal da home */
+    background-size: cover;    /* Cobre todo o espaço do container proporcionalmente */
+    background-position: center; /* Centraliza a imagem de fundo no bloco */
+    height: 350px;             /* Define uma altura fixa para a seção de destaque */
+    display: flex;             /* Ativa o Flexbox para centralizar o conteúdo */
+    justify-content: center;   /* Centraliza o botão horizontalmente no meio */
+    align-items: center;       /* Centraliza o botão verticalmente ao centro */
+}
+
+.hero-overlay {
+    position: absolute;        /* Cobre toda a área do container de destaque */
+    top: 0; left: 0; width: 100%; height: 100%; /* Estica o overlay de ponta a ponta */
+    background-color: rgba(0, 0, 0, 0.6); /* Aplica uma camada preta semitransparente */
+}
+
+.btn-funcionamento, .btn-funcionamento a {
+    position: relative;        /* Posiciona o botão acima da camada escura */
+    z-index: 2;                /* Garante prioridade de visualização sobre o overlay */
+    background-color: #b22222; /* Define a cor de fundo vermelha chamativa do botão */
+    color: #ffffff;            /* Deixa o texto do botão visível na cor branca */
+    padding: 12px 25px;        /* Adiciona espaço interno para encorpar o botão */
+    border-radius: 5px;        /* Arredonda levemente as bordas do botão */
+    text-decoration: none;     /* Remove o sublinhado padrão do link interno */
+    font-weight: bold;         /* Deixa o texto interno do botão em negrito */
+    border: none;              /* Remove bordas nativas do elemento */
+    cursor: pointer;           /* Altera o cursor do mouse para o formato de clique */
+}
+
+/* SEÇÃO SOBRE A BARBEARIA*/
+.sobre-a-barbearia {
+    padding: 40px 20px;        /* Adiciona espaçamento vertical e lateral generoso */
+    text-align: center;        /* Centraliza todos os textos descritivos da seção */
+    background-color: #0a0a0a; /* Define um fundo escuro sutil para diferenciar o bloco */
+}
+
+.sobre-a-barbearia h2 {
+    color: #ffffff;            /* Pinta o título institucional da barbearia de branco */
+    font-size: 22px;           /* Define o tamanho adequado para o título da seção */
+    margin-bottom: 20px;       /* Cria espaço inferior entre o título e os parágrafos */
+}
+
+.box-texto {
+    max-width: 800px;          /* Limita a largura máxima do texto para facilitar a leitura */
+    margin: 0 auto;            /* Centraliza a caixa de texto perfeitamente na tela */
+    line-height: 1.6;          /* Aumenta o espaçamento entrelinhas para legibilidade */
+    color: #cccccc;            /* Define um tom de cinza claro agradável para os parágrafos */
+}
+
+.box-texto p {
+    margin-bottom: 15px;       /* Insere espaçamento inferior entre cada parágrafo de texto */
+}
+
+/* PÁGINA DE HORÁRIOS                                                         */
+.horario {
+    padding: 40px 20px;        /* Adiciona espaçamento interno ao redor do conteúdo de horários */
+    text-align: center;        /* Centraliza os títulos e blocos de horários */
+}
+
+.banner-titlo h2 {
+    font-size: 28px;           /* Define o tamanho grande para o título de chamada */
+    margin: 0;                 /* Remove as margens do título superior */
+    color: #ffffff;            /* Deixa o texto principal do título em branco */
+}
+
+.banner-hr {
+    background-color: #ffffff; /* Fundo branco para destacar a tag secundária */
+    color: #000000;            /* Texto interno na cor preta para forte contraste */
+    display: inline-block;     /* Faz o bloco ocupar apenas o tamanho necessário do texto */
+    padding: 5px 15px;         /* Insere preenchimento interno ao redor da palavra */
+    margin-top: 5px;           /* Afasta o bloco levemente da linha de cima */
+    font-weight: bold;         /* Destaca o texto em negrito */
+    text-transform: uppercase; /* Converte todas as letras do título para maiúsculas */
+}
+
+.tab-dia {
+    max-width: 600px;          /* Limita a largura máxima da tabela de horários */
+    margin: 30px auto 0 auto;  /* Centraliza o bloco na tela e afasta do topo */
+    display: flex;             /* Organiza as linhas de horários em formato flexível */
+    flex-direction: column;    /* Empilha os dias de atendimento um abaixo do outro */
+    gap: 15px;                 /* Cria um espaçamento vertical limpo entre as linhas */
+}
+
+.organizar-tab-hr {
+    display: flex;             /* Posiciona o dia, a divisória e a hora em linha horizontal */
+    justify-content: space-between; /* Distribui os itens uniformemente nas pontas */
+    align-items: center;       /* Alinha verticalmente todos os elementos da linha */
+    background-color: #141414; /* Define o fundo escuro individual para cada linha de horário */
+    padding: 15px 25px;        /* Adiciona espaço interno confortável na linha */
+    border-left: 4px solid #b22222; /* Insere uma barra lateral vermelha de destaque */
+}
+
+.dia, .time {
+    font-size: 18px;           /* Define o tamanho legível para os dias e horários */
+    font-weight: bold;         /* Deixa os horários e dias em forte evidência */
+    color: #ffffff;            /* Pinta os textos informativos de branco */
+}
+
+.divisoria {
+    width: 2px;                /* Define a espessura da linha divisória central */
+    height: 30px;              /* Define a altura da linha divisória */
+    background-color: #b22222; /* Colore a linha divisória vertical em vermelho */
+}
+
+/* PÁGINA DE PREÇOS E SERVIÇOS*/
+
+.baner-home {
+    padding: 30px 20px;        /* Adiciona margem interna na seção principal de preços */
+}
+
+.banner-principal {
+    text-align: center;        /* Centraliza o título e a foto principal de destaque */
+    margin-bottom: 40px;       /* Cria espaço abaixo da imagem do topo */
+}
+
+.banner-principal h3 {
+    font-size: 26px;           /* Define o tamanho da fonte do cabeçalho da seção */
+    color: #ffffff;            /* Deixa o texto em destaque na cor branca */
+    margin-bottom: 15px;       /* Afasta o título da foto principal abaixo */
+}
+
+.foto-principal img {
+    width: 100%;               /* Faz a imagem ocupar a largura máxima disponível */
+    max-width: 500px;          /* Restringe o tamanho máximo para preservar a qualidade */
+    height: auto;              /* Mantém a proporção correta da imagem */
+    border: 3px solid #b22222; /* Adiciona uma borda elegante ao redor da foto */
+    border-radius: 8px;        /* Arredonda levemente os cantos da imagem principal */
+}
+
+.precos {
+    display: flex;             /* Organiza os cartões de preços lado a lado */
+    justify-content: center;   /* Centraliza o bloco de cartões na tela */
+    gap: 20px;                 /* Criaespaçamento horizontal uniforme entre os cards */
+    flex-wrap: wrap;           /* Permite que os cartões quebrem a linha em telas menores */
+    margin-bottom: 40px;       /* Afasta a seção de preços dos elementos abaixo */
+}
+
+.card-preco {
+    background-color: #1a1a1a; /* Define o fundo escuro para o cartão de preço */
+    border: 1px solid #333333; /* Adiciona uma borda sutil ao redor do card */
+    border-radius: 8px;        /* Arredonda os cantos do cartão de preço */
+    padding: 20px;             /* Adiciona espaço interno dentro do card */
+    width: 250px;              /* Define uma largura padrão fixa para os cartões */
+    text-align: center;        /* Centraliza o conteúdo (ícones, preços e textos) */
+}
+
+.card-header {
+    font-size: 24px;           /* Define o tamanho do ícone de tesoura no topo do card */
+    color: #b22222;            /* Colore o ícone do card com o padrão vermelho */
+    margin-bottom: 10px;       /* Cria espaço entre o ícone e o texto do preço */
+}
+
+.card-preco span {
+    font-size: 14px;           /* Define o tamanho pequeno para a categoria */
+    color: #aaaaaa;            /* Deixa a cor do rótulo em cinza suave */
+    display: block;            /* Faz o rótulo ocupar sua própria linha isolada */
+    margin-bottom: 8px;        /* Insere pequeno respiro inferior */
+}
+
+.card-preco p {
+    font-size: 16px;           /* Define o tamanho do texto descritivo do serviço e valor */
+    font-weight: bold;         /* Deixa o preço final em destaque negrito */
+    color: #ffffff;            /* Pinta o texto do preço de branco */
+    margin: 0;                 /* Remove margens extras do parágrafo */
+}
+
+.videos {
+    display: flex;             /* Organiza as miniaturas de vídeo em linha horizontal */
+    justify-content: center;   /* Centraliza o bloco de vídeos no centro da página */
+    gap: 15px;                 /* Insere espaçamento entre as miniaturas de vídeo */
+    flex-wrap: wrap;           /* Permite a adaptação dos vídeos em dispositivos menores */
+}
+
+.miniatura-video {
+    width: 220px;              /* Define a largura padrão para a miniatura do vídeo */
+    height: 130px;             /* Define a altura padrão para a miniatura */
+    background-color: #222222; /* Define um fundo escuro provisório para a miniatura */
+    background-image: url('#vermelho_miniatura.jpg'); /* Local para a imagem da miniatura */
+    background-size: cover;    /* Ajusta a imagem para preencher todo o espaço */
+    background-position: center; /* Centraliza a imagem de fundo do vídeo */
+    border-radius: 5px;        /* Arredonda os cantos da miniatura do vídeo */
+    position: relative;        /* Permite o posicionamento do botão de play interno */
+    display: flex;             /* Ativa o Flexbox para centralizar o botão play */
+    justify-content: center;   /* Centraliza horizontalmente o botão de play */
+    align-items: center;       /* Centraliza verticalmente o botão de play */
+}
+
+.play-btn {
+    background-color: rgba(178, 34, 34, 0.8); /* Fundo vermelho translúcido para o play */
+    width: 40px;               /* Define a largura do botão de reprodução */
+    height: 40px;              /* Define a altura do botão de reprodução */
+    border-radius: 50%;        /* Deixa o botão de play perfeitamente redondo */
+    display: flex;             /* Centraliza o ícone interno do play */
+    justify-content: center;   /* Centraliza o ícone no eixo horizontal */
+    align-items: center;       /* Centraliza o ícone no eixo vertical */
+}
+
+.play-video {
+    border-left: 12px solid #ffffff; /* Cria a ponta do ícone de play em triângulo */
+    border-top: 8px solid transparent; /* Cria o corte superior transparente do triângulo */
+    border-bottom: 8px solid transparent; /* Cria o corte inferior transparente do triângulo */
+    margin-left: 3px;          /* Ajusta o posicionamento visual central do triângulo */
+}
+
+
+/* PÁGINAS DE FORMULÁRIOS (CADASTRO E AGENDAMENTO)*/
+
+.container {
+    max-width: 600px;          /* Limita a largura máxima do formulário principal */
+    margin: 40px auto;         /* Centraliza o container na tela com margens nas pontas */
+    background-color: #141414; /* Define um fundo escuro elegante para o formulário */
+    padding: 30px;             /* Adiciona espaço interno generoso no formulário */
+    border-radius: 8px;        /* Arredonda os cantos da caixa do formulário */
+    border: 1px solid #333333; /* Insere uma borda discreta em volta do container */
+}
+
+.container h2 {
+    text-align: center;        /* Centraliza o título principal do topo do formulário */
+    color: #ffffff;            /* Deixa o título do formulário na cor branca */
+    margin-bottom: 25px;       /* Cria espaço abaixo do título antes dos campos */
+}
+
+form div {
+    margin-bottom: 15px;       /* Espacia verticalmente cada campo do formulário */
+}
+
+form label {
+    display: block;            /* Faz o rótulo ocupar sua própria linha em cima do campo */
+    margin-bottom: 5px;        /* Cria pequeno espaço entre o texto e a caixa de digitação */
+    font-weight: bold;         /* Destaca os rótulos dos campos em negrito */
+    color: #cccccc;            /* Colore os textos dos rótulos em cinza claro */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;               /* Faz o campo de texto ocupar toda a largura disponível */
+    padding: 10px;             /* Adiciona espaço interno para digitação confortável */
+    background-color: #222222; /* Define fundo escuro para as caixas de texto */
+    border: 1px solid #444444; /* Define uma borda cinza escura para os inputs */
+    color: #ffffff;            /* Garante que o texto digitado seja visível em branco */
+    border-radius: 4px;        /* Arredonda levemente as bordas das caixas de input */
+    box-sizing: border-box;    /* Inclui padding e borda no cálculo total da largura */
+}
+
+.escolher-horarios,
+.secao-de-pagamento {
+    margin-top: 20px;          /* Insere espaço superior nas seções de opções */
+}
+
+.radio-grid,
+.radio-pagar {
+    display: flex;             /* Organiza as opções de seleção múltipla em linha */
+    flex-wrap: wrap;           /* Permite a quebra de linha automática se necessário */
+    gap: 15px;                 /* Cria espaçamento lateral entre as caixas de opções */
+    margin-top: 8px;           /* Afasta o grupo de opções do rótulo superior */
+}
+
+.radio-item {
+    display: flex;             /* Alinha o botão de seleção junto ao texto descritivo */
+    align-items: center;       /* Centraliza o botão de rádio verticalmente com o texto */
+    gap: 5px;                  /* Cria pequeno espaço entre a bolinha e a palavra */
+    color: #ffffff;            /* Deixa o texto da opção legível em branco */
+    font-weight: normal;       /* Remove o negrito para manter a suavidade visual */
+    cursor: pointer;           /* Altera o cursor do mouse
+}
