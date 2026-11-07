@@ -1,14 +1,5 @@
-<?php include 'includes/head.php'; ?>                           <!-- Inclui o arquivo de cabeçalho estrutural (tags meta, links de CSS, etc.) -->
-
-<!DOCTYPE html>                                                 <!-- Declara ao navegador que este é um documento HTML5 moderno -->
-<html lang="pt-BR">                                             <!-- Abertura do documento definindo o idioma principal como Português do Brasil -->
-<head>                                                          <!-- Abertura do cabeçalho de metadados invisíveis ao usuário -->
-    <meta charset="UTF-8">                                      <!-- Configura a codificação de caracteres para aceitar acentos e cedilha -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva e adaptável a telas de celulares -->
-    <title><strong>Cadastro de Agendamento</strong></title>     <!-- Define o título da página que aparece na aba do navegador -->
-    <!-- Link para o arquivo CSS externo -->                     <!-- Comentário interno original do arquivo HTML -->
-    <link rel="stylesheet" href="style.css">                    <!-- Vincula a folha de estilos CSS externa para dar design à página -->
-</head>                                                         <!-- Fechamento do bloco de metadados da página -->
+<?php include 'includes/head.php'; ?>
+<?php include 'includes/header.php'; ?>                                                        <!-- Fechamento do bloco de metadados da página -->
 <body>                                                          <!-- Abertura do corpo do documento onde fica o conteúdo visível -->
 
 <div class="container">                                         <!-- Caixa principal que centraliza e limita a largura do conteúdo na tela -->
@@ -78,6 +69,7 @@
         echo "</div>";                                          // Imprime o fechamento da caixa de resposta de sucesso
     }                                                           // Encerramento da verificação condicional do isset
     ?>                                                          <!-- Fechamento da tag de script PHP -->
-</div>                                                          
+</div> 
+<?php include 'includes/footer.php'; ?>                                                     
 </body>                                                      
 </html>                                                         

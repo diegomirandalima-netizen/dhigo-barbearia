@@ -1,38 +1,20 @@
 <?php include 'includes/head.php'; ?>
-<body>
-
-    <header class="header">
-        <div class="logo-container">
-            <div class="foto-pirata">
-                <img src="pirata.png">
-        </div>
-            <div class="logo-text">
-                <span class="sub-logo">DHIGO</span>
-                <span class="main-logo">BARBEARIA</span>
-            </div>
-        </div>
-
-        <div class="header-cabecalho">
-            <h1>DHIGO BARBEARIA</h1>
-            <p>Estilos é tudo!</p>
-        </div>
+<?php include 'includes/header.php'; ?>
 
         <div class="header-right">
             <p class="slogan-top">Corte - Estilo - Atitude !</p>
             <nav class="nav-links">
-                <a href="#">Cadastrar</a>
-                <a href="#">Agendar</a>
-                <a href="#">Preços</a>
+                <a href="cad_cliente.php">Cadastrar</a>
+                <a href="index_agendamento.php">Agendar</a>
+                <a href="index_preco.php">Preços</a>
             </nav>
         </div>
     </header>
 
     <section class="hr-funcionamento">
         <div class="hero-overlay"></div>
-        <botton class="btn-funcionamento">
-
+        <button class="btn-funcionamento">
             <a href="index_horario.php">Horario de funcionamento</a>
-            
         </button>
     </section>
 
@@ -49,14 +31,11 @@
                 Fundada em 2020, a Dhigo Barbearia já é destaque na cidade e conquista novos clientes a cada dia.
             </p>
             <p>
-                Oferecemos professionals experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
+                Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
             </p>
         </div>
     </section>
 
     <?php include 'includes/footer.php'; ?>
-
 </body>
 </html>
-
-

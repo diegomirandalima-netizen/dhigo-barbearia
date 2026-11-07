@@ -1,9 +1,17 @@
-    <header class="header">
+<header class="header">
         <div class="logo-container">
-            <img src="logo.png" alt="Logo Dhigo Barbearia" class="logo">
+            <div class="foto-pirata">
+                <img src="pirata.png" alt="Logo Pirata">
+            </div>
+            <div class="logo-text">
+                <span class="sub-logo">DHIGO</span>
+                <span class="main-logo">BARBEARIA</span>
+            </div>
         </div>
-        <div class="titulo-container">
-            <h1><i class="cabecalho"></i> DHIGO BARBEARIA <i class="cabecalhho"></i></h1>
-            <h2>Estilos é tudo!</h2>
+
+        <div class="header-cabecalho">
+            <h1>DHIGO BARBEARIA</h1>
+            <p>Estilos é tudo!</p>
         </div>
-    </header>
+</header>
+

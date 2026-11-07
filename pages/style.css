@@ -115,7 +115,7 @@ body {
 /* SEÇÃO DE DESTAQUE / HERO E HORÁRIO DE FUNCIONAMENTO*/
 .hr-funcionamento {
     position: relative;        /* Permite o posicionamento absoluto dos elementos internos */
-    background-image: url('#vermelho_fundo_home.jpg'); /* Define a imagem de fundo principal da home */
+    background-image: ('#'); /* Define a imagem de fundo principal da home */
     background-size: cover;    /* Cobre todo o espaço do container proporcionalmente */
     background-position: center; /* Centraliza a imagem de fundo no bloco */
     height: 350px;             /* Define uma altura fixa para a seção de destaque */
@@ -291,7 +291,7 @@ body {
     width: 220px;              /* Define a largura padrão para a miniatura do vídeo */
     height: 130px;             /* Define a altura padrão para a miniatura */
     background-color: #222222; /* Define um fundo escuro provisório para a miniatura */
-    background-image: url('#vermelho_miniatura.jpg'); /* Local para a imagem da miniatura */
+    background-image: url('#'); /* Local para a imagem da miniatura */
     background-size: cover;    /* Ajusta a imagem para preencher todo o espaço */
     background-position: center; /* Centraliza a imagem de fundo do vídeo */
     border-radius: 5px;        /* Arredonda os cantos da miniatura do vídeo */

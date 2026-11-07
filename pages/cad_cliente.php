@@ -1,24 +1,5 @@
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/style.css">
-
-    <title>Dhigo Barbearia - Cadastro de Clientes</title>
-</head>
-<body>
-
-    <header>
-        <h1>DHIGO BARBEARIA</h1>
-        <nav class="menu">
-            <ul>
-                <p class="slogan-top">Corte - Estilo - Atitude !</p>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="index_agendamento.php">Agendar</a></li>
-                <li><a href="index_preco.php">Preço</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include 'includes/head.php'; ?>
+<?php include 'includes/header.php'; ?>
 
     <main>
         <h2>Formulário de Cadastro de Clientes</h2>
@@ -68,11 +49,7 @@
             <button type="submit">Submit</button>
         </form>
     </main>
-
-
-    <footer>
-        <p>&copy; Copyright Dhigo Barbearia - 2020</p>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
 </body>
 </html>

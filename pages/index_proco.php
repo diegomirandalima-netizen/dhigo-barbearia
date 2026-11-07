@@ -1,16 +1,5 @@
-<?php include 'includes/head.php'; ?>                           <!-- Inclui o arquivo de cabeçalho estrutural (tags meta, links de CSS, etc.) -->
-<body>                                                          <!-- Abertura do corpo da página que contém o conteúdo visível -->
-
-    <header>                                                    <!-- Definição do cabeçalho da página (área do topo) -->
-        <nav class="menu">                                      <!-- Bloco de navegação principal do site -->
-            <ul>                                                <!-- Abertura da lista não ordenada para os itens do menu -->
-                <p class="slogan-top">Corte - Estilo - Atitude!</p>   <!-- Exibe o slogan da barbearia no topo do menu -->
-                <li><a href="cad_cliente.php">Cadastrar</a></li> <!-- Link que direciona para a página de cadastro de clientes -->
-                <li><a href="index_agendamento.php">Agendar</a></li><!-- Link que direciona para o sistema de agendamento -->
-                <li><a href="home.php">Home</a></li>            <!-- Link que retorna para a página inicial (Home) -->
-            </ul>                                               <!-- Fechamento da lista do menu -->
-        </nav>                                                 
-    </header>                                                   
+<?php include 'includes/head.php'; ?>
+<?php include 'includes/header.php'; ?>                                                   
 
     <main class="baner-home">                                   <!-- Conteúdo principal da página (foco na Home) -->
         <section class="banner-principal">                      <!-- Seção de destaque do topo da página -->
