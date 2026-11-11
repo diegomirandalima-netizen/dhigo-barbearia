@@ -1,5 +1,9 @@
+* {
+    background-color: rgb(6, 0, 0);
+}
+
 body {
-    background-color: #000000; /* Define o fundo da página como preto */
+    background-color: #0a0000; /* Define o fundo da página como preto */
     color: #ffffff;            /* Define a cor padrão do texto como branco */
     font-family: Arial, sans-serif; /* Define a fonte padrão utilizada */
     margin: 0;                 /* Remove as margens padrão do navegador */
@@ -14,7 +18,7 @@ body {
     justify-content: space-between; /* Espaça os elementos uniformemente */
     align-items: center;       /* Alinha os itens verticalmente ao centro */
     padding: 20px;             /* Adiciona espaço interno no cabeçalho */
-    background-color: #111111; /* Define um tom escuro de fundo para o header */
+    background-color: #0b0000; /* Define um tom escuro de fundo para o header */
     border-bottom: 2px solid #b22222; /* Cria uma linha divisoria vermelha embaixo */
 }
 
@@ -87,7 +91,7 @@ body {
 /* MENU DE NAVEGAÇÃO (NAV)*/
 
 .menu {
-    background-color: #1a1a1a; /* Define o fundo escuro para a barra de menu */
+    background-color: #080000; /* Define o fundo escuro para a barra de menu */
     padding: 10px 20px;        /* Adiciona respiro interno na barra de navegação */
 }
 
@@ -127,7 +131,7 @@ body {
 .hero-overlay {
     position: absolute;        /* Cobre toda a área do container de destaque */
     top: 0; left: 0; width: 100%; height: 100%; /* Estica o overlay de ponta a ponta */
-    background-color: rgba(0, 0, 0, 0.6); /* Aplica uma camada preta semitransparente */
+    background-color: rgba(11, 0, 0, 0.6); /* Aplica uma camada preta semitransparente */
 }
 
 .btn-funcionamento, .btn-funcionamento a {
@@ -147,7 +151,7 @@ body {
 .sobre-a-barbearia {
     padding: 40px 20px;        /* Adiciona espaçamento vertical e lateral generoso */
     text-align: center;        /* Centraliza todos os textos descritivos da seção */
-    background-color: #0a0a0a; /* Define um fundo escuro sutil para diferenciar o bloco */
+    background-color: #0a0000; /* Define um fundo escuro sutil para diferenciar o bloco */
 }
 
 .sobre-a-barbearia h2 {
@@ -181,7 +185,7 @@ body {
 
 .banner-hr {
     background-color: #ffffff; /* Fundo branco para destacar a tag secundária */
-    color: #000000;            /* Texto interno na cor preta para forte contraste */
+    color: #0e0000;            /* Texto interno na cor preta para forte contraste */
     display: inline-block;     /* Faz o bloco ocupar apenas o tamanho necessário do texto */
     padding: 5px 15px;         /* Insere preenchimento interno ao redor da palavra */
     margin-top: 5px;           /* Afasta o bloco levemente da linha de cima */
@@ -201,7 +205,7 @@ body {
     display: flex;             /* Posiciona o dia, a divisória e a hora em linha horizontal */
     justify-content: space-between; /* Distribui os itens uniformemente nas pontas */
     align-items: center;       /* Alinha verticalmente todos os elementos da linha */
-    background-color: #141414; /* Define o fundo escuro individual para cada linha de horário */
+    background-color: #0b0000; /* Define o fundo escuro individual para cada linha de horário */
     padding: 15px 25px;        /* Adiciona espaço interno confortável na linha */
     border-left: 4px solid #b22222; /* Insere uma barra lateral vermelha de destaque */
 }
@@ -252,8 +256,8 @@ body {
 }
 
 .card-preco {
-    background-color: #1a1a1a; /* Define o fundo escuro para o cartão de preço */
-    border: 1px solid #333333; /* Adiciona uma borda sutil ao redor do card */
+    background-color: #080000; /* Define o fundo escuro para o cartão de preço */
+    border: 1px solid #0b0000; /* Adiciona uma borda sutil ao redor do card */
     border-radius: 8px;        /* Arredonda os cantos do cartão de preço */
     padding: 20px;             /* Adiciona espaço interno dentro do card */
     width: 250px;              /* Define uma largura padrão fixa para os cartões */
@@ -280,43 +284,6 @@ body {
     margin: 0;                 /* Remove margens extras do parágrafo */
 }
 
-.videos {
-    display: flex;             /* Organiza as miniaturas de vídeo em linha horizontal */
-    justify-content: center;   /* Centraliza o bloco de vídeos no centro da página */
-    gap: 15px;                 /* Insere espaçamento entre as miniaturas de vídeo */
-    flex-wrap: wrap;           /* Permite a adaptação dos vídeos em dispositivos menores */
-}
-
-.miniatura-video {
-    width: 220px;              /* Define a largura padrão para a miniatura do vídeo */
-    height: 130px;             /* Define a altura padrão para a miniatura */
-    background-color: #222222; /* Define um fundo escuro provisório para a miniatura */
-    background-image: url('#'); /* Local para a imagem da miniatura */
-    background-size: cover;    /* Ajusta a imagem para preencher todo o espaço */
-    background-position: center; /* Centraliza a imagem de fundo do vídeo */
-    border-radius: 5px;        /* Arredonda os cantos da miniatura do vídeo */
-    position: relative;        /* Permite o posicionamento do botão de play interno */
-    display: flex;             /* Ativa o Flexbox para centralizar o botão play */
-    justify-content: center;   /* Centraliza horizontalmente o botão de play */
-    align-items: center;       /* Centraliza verticalmente o botão de play */
-}
-
-.play-btn {
-    background-color: rgba(178, 34, 34, 0.8); /* Fundo vermelho translúcido para o play */
-    width: 40px;               /* Define a largura do botão de reprodução */
-    height: 40px;              /* Define a altura do botão de reprodução */
-    border-radius: 50%;        /* Deixa o botão de play perfeitamente redondo */
-    display: flex;             /* Centraliza o ícone interno do play */
-    justify-content: center;   /* Centraliza o ícone no eixo horizontal */
-    align-items: center;       /* Centraliza o ícone no eixo vertical */
-}
-
-.play-video {
-    border-left: 12px solid #ffffff; /* Cria a ponta do ícone de play em triângulo */
-    border-top: 8px solid transparent; /* Cria o corte superior transparente do triângulo */
-    border-bottom: 8px solid transparent; /* Cria o corte inferior transparente do triângulo */
-    margin-left: 3px;          /* Ajusta o posicionamento visual central do triângulo */
-}
 
 
 /* PÁGINAS DE FORMULÁRIOS (CADASTRO E AGENDAMENTO)*/
@@ -324,10 +291,10 @@ body {
 .container {
     max-width: 600px;          /* Limita a largura máxima do formulário principal */
     margin: 40px auto;         /* Centraliza o container na tela com margens nas pontas */
-    background-color: #141414; /* Define um fundo escuro elegante para o formulário */
+    background-color: #090000; /* Define um fundo escuro elegante para o formulário */
     padding: 30px;             /* Adiciona espaço interno generoso no formulário */
     border-radius: 8px;        /* Arredonda os cantos da caixa do formulário */
-    border: 1px solid #333333; /* Insere uma borda discreta em volta do container */
+    border: 1px solid #0b0000; /* Insere uma borda discreta em volta do container */
 }
 
 .container h2 {
@@ -353,13 +320,37 @@ form input[type="number"],
 form input[type="date"] {
     width: 100%;               /* Faz o campo de texto ocupar toda a largura disponível */
     padding: 10px;             /* Adiciona espaço interno para digitação confortável */
-    background-color: #222222; /* Define fundo escuro para as caixas de texto */
-    border: 1px solid #444444; /* Define uma borda cinza escura para os inputs */
+    background-color: #494747; /* Define fundo escuro para as caixas de texto */
+    border: 1px solid #474646; /* Define uma borda cinza escura para os inputs */
     color: #ffffff;            /* Garante que o texto digitado seja visível em branco */
     border-radius: 4px;        /* Arredonda levemente as bordas das caixas de input */
     box-sizing: border-box;    /* Inclui padding e borda no cálculo total da largura */
 }
 
+.btn-cadastrar-pequeno {
+    color: inherit;
+    font-weight: bold;
+    background-color: red;
+    border: 1px solid black;  /* Forma simplificada de escrever largura, estilo e cor */
+    
+    /* 📐 Ajustes para o tamanho pequeno */
+    font-size: 0.8rem;         /* Reduz o tamanho da letra (padrão costuma ser 1rem) */
+    padding: 0.15em 0.8em;     /* Reduz o espaçamento (ficou bem mais estreito) */
+    
+    /* Mantém o comportamento de botão */
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: .1s ease-in;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .btn-cadastrar-pequeno:hover {
+    background-color: darkred;
+    color: white;
+  }
+  
 .escolher-horarios,
 .secao-de-pagamento {
     margin-top: 20px;          /* Insere espaço superior nas seções de opções */
@@ -379,5 +370,38 @@ form input[type="date"] {
     gap: 5px;                  /* Cria pequeno espaço entre a bolinha e a palavra */
     color: #ffffff;            /* Deixa o texto da opção legível em branco */
     font-weight: normal;       /* Remove o negrito para manter a suavidade visual */
-    cursor: pointer;           /* Altera o cursor do mouse
+    cursor: pointer;           /* Altera o cursor do mouse*/
 }
+
+.footer {
+    background-color: #060000; /* Fundo preto puro */
+    border-top: 3px solid #8b1e1e; /* Linha vermelha no topo (ajuste a cor se quiser mais clara/escura) */
+    padding: 40px 20px; /* Espaçamento interno (cima/baixo e lados) */
+    text-align: center;
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte limpa e legível */
+  }
+  
+  .footer-contro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espaço entre a logo e o texto */
+  }
+  
+  .footer-logo {
+    max-width: 80px; /* Largura da logo */
+    height: auto;
+    display: block;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  
+  

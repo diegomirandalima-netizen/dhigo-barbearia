@@ -6,7 +6,7 @@
     <title>Dhigo Barbearia</title>
     <link rel="stylesheet" href="./pages/style.css">
 </head>
-<body style="background-color: black;">
+<body>
 
     <!-- Cabeçalho -->
     <header class="header">
@@ -17,26 +17,26 @@
             <h1><span class="barber-pole">💈</span> DHIGO BARBEARIA <span class="barber-pole">💈</span></h1>
             <p>Estilos é tudo!</p>
         </div>
-        <nav class="nav-menu">
-            <p class="slogan-top">Corte - Estilo - Atitude !</p>
+       
+        <nav class="menu">
             <ul>
+                <li><a href="#"></a></li>
                 <li><a href="./pages/cad_cliente.php">Cadastrar</a></li>
-                <li><a href="#">Agendar</a></li>
-                <li><a href="#">Preços</a></li>
+                <li><a href="./pages/agendamento_novo.php">Agendar</a></li>
+                <li><a href="./pages/preco.php">Preços</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de Destaque / Imagem Principal - a ser corrigido, esta em cima de todos os outros elemnentos
-    <section class="hero">
-        <div class="hero-overlay">
-            <div class="badge-horario">
-                Horario de <br>funcionamento
+    
+    <section class="pirata">
+        <div class="pirata">
+            <img src="pirata.png" alt="baner_pirata">
+            <div class="horário">
+                <li><a href="./pages/index_horario.php">Horario de funcionamento</a></li>
             </div>
         </div>
-    </section>-->
-
-    <!-- Seção Sobre a Barbearia -->
+    </section>
     <section class="about">
         <h2><span class="barber-pole">💈</span> SOBRE A DHIGO BARBEARIA <span class="barber-pole">💈</span></h2>
         <div class="about-card">
@@ -51,10 +51,13 @@
     </section>
 
     <!-- Rodapé -->
-    <footer class="footer">
-        <img src="logo.png" alt="Logo Rodapé" class="footer-logo">
-        <p>&copy; Copyright Dhigo Barbearia - <?php echo date('Y'); ?></p>
-    </footer>
+<footer class="footer">
+  <div class="footer-contro">
+    <img src="logo.png" class = "logo-footer" alt="logo">
+        <div class="footer-logo">DHIGO BARBEARIA</div>
+    <p class="footer-text">&copy; Copyright Dhigo Barbearia - 2020</p>
+  </div>
+</footer>
 
 </body>
 </html>

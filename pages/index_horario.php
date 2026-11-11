@@ -1,48 +1,87 @@
-<?php include 'includes/head.php'; ?>                           <!-- Inclui a estrutura do cabeçalho da página (metatags, arquivos CSS, etc.) -->
-<body>                                                         
-        <nav class="menu">                                      <!-- Bloco de navegação principal do menu do site -->
-            <ul>                                                <!-- Abertura da lista de links do menu -->
-            <p class="slogan-top">Corte - Estilo - Atitude !</p> <!-- Exibe a frase de efeito/slogan no topo do menu -->
-                <li><a href="home.php">Home</a></li>            <!-- Link de navegação direcionando para a página inicial -->
-                <li><a href="cad_cliente.php">Cadastrar</a></li> <!-- Link de navegação direcionando para a página de cadastro -->
-                <li><a href="index_agendamento.php">Agendar</a></li><!-- Link de navegação direcionando para o sistema de agendamento -->
-                <li><a href="index_preco.php">Preço</a></li>    <!-- Link de navegação direcionando para a tabela ou página de preços -->
-            </ul>                                               <!-- Fechamento da lista de navegação -->
-        </nav>                                                  <!-- Fechamento do bloco do menu -->
+<?php
+$horarios = [
+    [
+        'dias' => 'Terça a Sábado',
+        'horas' => '09h às 20h'
+    ],
+    [
+        'dias' => 'Domingo',
+        'horas' => '09h às 13h'
+    ],
+    [
+        'dias' => 'Feriados',
+        'horas' => '09h às 14h'
+    ]
+];
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhigo Barbearia - Horário de Funcionamento</title>
  
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Cabeçalho / Navbar -->
+    <header class="navbar">
+        <div class="brand">
+            <div class="logo-placeholder">💈</div>
+            <div class="brand-text">
+                <h1>DHIGO BARBEARIA</h1>
+                <p>Estilos é tudo!</p>
+            </div>
+            <div class="brand-pole">💈</div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="./pages/home.php">home</a></li>
+                <li><a href="./pages/cad_cliente.php">Cadastrar</a></li>
+                <li><a href="./pages/agendamento_novo.php">Agendar</a></li>
+                <li><a href="./pages/preco.php">Preços</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="horario">                                      <!-- Conteúdo principal focado nas informações de horários -->
-        <div class="banner-titlo">                              <!-- Container para agrupar as partes do título de chamada -->
-            <h2><strong>HORÁRIO DE</strong></h2>                <!-- Primeira linha do título de funcionamento principal -->
-            <div class="banner-hr">                             <!-- Container de estilo para destacar a segunda palavra do título -->
-                <span>funcionamento</span>                      <!-- Segunda parte do título em destaque -->
-            </div>                                              <!-- Fechamento do container do destaque do título -->
-        </div>                                                  <!-- Fechamento do bloco completo do título -->
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        
+        <div class="titulo-wrapper">
+            <h2 class="titulo-principal">HORÁRIO DE</h2>
+            <div class="subtitulo-box">
+                <h3>funcionamento</h3>
+            </div>
+        </div>
 
-        <div class="tab-dia">                                   <!-- Bloco/Tabela principal que agrupa as linhas com os dias de atendimento -->
+        <!-- Tabela de Horários alimentada dinamicamente via PHP -->
+        <section class="quadro-horarios">
+            <?php foreach ($horarios as $item): ?>
+                <div class="linha-horario">
+                    <div class="col-esquerda">
+                        <span><?php echo htmlspecialchars($item['dias']); ?></span>
+                    </div>
+                    <div class="col-direita">
+                        <span><?php echo htmlspecialchars($item['horas']); ?></span>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </section>
 
-            <div class="organizar-tab-hr">                          <!-- Primeira linha da tabela (Horário convencional de atendimento) -->
-                <div class="dia">Terça a<br>Sábado</div>        <!-- Coluna com o intervalo de dias da semana (com quebra de linha) -->
-                <div class="divisoria"></div>                     <!-- Divisor visual gráfico posicionado entre os dias e as horas -->
-                <div class="time">09h às<br>20h</div>           <!-- Coluna com o horário de atendimento desses dias correspondentes -->
-            </div>                                              <!-- Fechamento da primeira linha da tabela -->
+    </main>
 
-            <div class="organizar-tab-hr">                          <!-- Segunda linha da tabela (Atendimento diferenciado no final de semana) -->
-                <div class="dia">Domingo</div>                  <!-- Coluna que exibe o dia de domingo isoladamente -->
-                <div class="divisoria"></div>                     <!-- Divisor visual gráfico centralizado na linha -->
-                <div class="time">09h às<br>13h</div>           <!-- Coluna com o horário de atendimento reduzido de domingo -->
-            </div>                                              <!-- Fechamento da segunda linha da tabela -->
+    <!-- Rodapé -->
+<footer class="footer">
+  <div class="footer-contro">
+    <img src="logo.png" class = "logo-footer" alt="logo">
+        <div class="footer-logo">DHIGO BARBEARIA</div>
+    <p class="footer-text">&copy; Copyright Dhigo Barbearia - 2020</p>
+  </div>
+</footer>
 
-            <div class="organizar-tab-hr">                          <!-- Terceira linha da tabela (Regra de atendimento para datas comemorativas) -->
-                <div class="dia">Feriados</div>                 <!-- Coluna com a identificação para dias de feriado -->
-                <div class="divisoria"></div>                     <!-- Divisor visual gráfico centralizado na linha -->
-                <div class="time">09h às<br>14h</div>           <!-- Coluna com o horário de funcionamento específico para feriados -->
-            </div>                                              <!-- Fechamento da terceira linha da tabela -->
-        </div>                                                  
-    </main>                                                  
-
-    <?php include 'includes/footer.php'; ?>                     <!-- Inclui a estrutura do rodapé da página (scripts, links de rodapé, etc.) -->
-
-</body>                                                        
-</html>                                                         
+</body>
+</html>
